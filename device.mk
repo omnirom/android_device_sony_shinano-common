@@ -77,6 +77,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     extract_elf_ramdisk
 
+#Recovery keycheck
+PRODUCT_PACKAGES += \
+    keycheck
+
 #Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
