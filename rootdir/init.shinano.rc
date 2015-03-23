@@ -36,6 +36,9 @@ on fs
     mount_all ./fstab.shinano
     write /sys/kernel/boot_adsp/boot 1
 
+    # Start hvdcp to enable quck charge 2.0 in power off charge
+    start hvdcp
+
 on post-fs-data
     # To observe dnsmasq.leases file for dhcp information of soft ap.
     chown dhcp system /data/misc/dhcp
@@ -440,3 +443,8 @@ service timekeep /system/bin/timekeep restore
    user root
    group root
    oneshot
+
+service hvdcp /system/vendor/bin/hvdcp
+    class core
+    user root
+    disabled
