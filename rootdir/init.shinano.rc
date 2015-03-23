@@ -63,6 +63,9 @@ on fs
     setprop ro.crypto.fuse_sdcard true
     write /sys/kernel/boot_adsp/boot 1
 
+    # Start hvdcp to enable quck charge 2.0 in power off charge
+    start hvdcp
+
 on post-fs-data
     # MSM specific files that need to be created on /data
     # We will remap this as /mnt/sdcard with the sdcard fuse tool
@@ -490,3 +493,8 @@ service timekeep /system/bin/timekeep restore
    user root
    group root
    oneshot
+
+service hvdcp /system/vendor/bin/hvdcp
+    class core
+    user root
+    disabled
