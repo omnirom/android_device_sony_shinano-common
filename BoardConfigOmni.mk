@@ -18,6 +18,12 @@ BOARD_CUSTOM_BOOTIMG_MK := device/sony/shinano-common/boot/custombootimg.mk
 BOARD_KERNEL_SEPARATED_DT := true
 TARGET_DTB_EXTRA_FLAGS := --force-v2
 
+# Charger
+HEALTHD_ENABLE_TRICOLOR_LED := true
+RED_LED_PATH := /sys/devices/01-qcom,leds-d000/leds/led:rgb_red/brightness
+GREEN_LED_PATH := /sys/devices/01-qcom,leds-d000/leds/led:rgb_green/brightness
+BLUE_LED_PATH := /sys/devices/01-qcom,leds-d000/leds/led:rgb_blue/brightness
+
 # TWRP Recovery
 TARGET_NO_SEPARATE_RECOVERY := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
