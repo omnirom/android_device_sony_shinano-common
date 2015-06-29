@@ -90,6 +90,10 @@ TARGET_NO_RPC := true
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
+HEALTHD_ENABLE_TRICOLOR_LED := true
+RED_LED_PATH := /sys/class/leds/led:rgb_red/brightness
+GREEN_LED_PATH := /sys/class/leds/led:rgb_green/brightness
+BLUE_LED_PATH := /sys/class/leds/led:rgb_blue/brightness
 
 TARGET_SYSTEM_PROP := device/sony/shinano-common/system.prop
 
