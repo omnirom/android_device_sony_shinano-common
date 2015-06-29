@@ -21,6 +21,9 @@ TARGET_DTB_EXTRA_FLAGS := --force-v2
 # Proprietary files
 SONY_AOSP ?= true
 
+# Charger
+HEALTHD_FORCE_BACKLIGHT_CONTROL := true
+
 # TWRP Recovery
 TARGET_NO_SEPARATE_RECOVERY := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
