@@ -23,6 +23,10 @@ SONY_AOSP ?= true
 
 # Charger
 HEALTHD_FORCE_BACKLIGHT_CONTROL := true
+HEALTHD_ENABLE_TRICOLOR_LED := true
+RED_LED_PATH := /sys/devices/01-qcom,leds-d000/leds/led:rgb_red/brightness
+GREEN_LED_PATH := /sys/devices/01-qcom,leds-d000/leds/led:rgb_green/brightness
+BLUE_LED_PATH := /sys/devices/01-qcom,leds-d000/leds/led:rgb_blue/brightness
 
 # TWRP Recovery
 TARGET_NO_SEPARATE_RECOVERY := true
