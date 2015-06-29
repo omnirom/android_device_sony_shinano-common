@@ -90,6 +90,7 @@ TARGET_NO_RPC := true
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
+HEALTHD_FORCE_BACKLIGHT_CONTROL := true
 
 TARGET_SYSTEM_PROP := device/sony/shinano-common/system.prop
 
