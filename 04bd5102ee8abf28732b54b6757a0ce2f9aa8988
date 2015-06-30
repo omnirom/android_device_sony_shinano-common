@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f8eba960_a7a16ea2",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1000124
+      },
+      "writtenOn": "2015-06-30T16:16:20Z",
+      "side": 1,
+      "message": "useless blank line :)",
+      "revId": "04bd5102ee8abf28732b54b6757a0ce2f9aa8988",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f8eba960_878e6a34",
+        "filename": "system.prop",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000124
+      },
+      "writtenOn": "2015-06-30T16:16:20Z",
+      "side": 1,
+      "message": "Is lteOnGSMDevice set somewhere else or am I missing something?",
+      "revId": "04bd5102ee8abf28732b54b6757a0ce2f9aa8988",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
