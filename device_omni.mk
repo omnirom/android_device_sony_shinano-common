@@ -18,18 +18,6 @@ SONY_ROOT = device/sony/shinano-common/rootdir
 PRODUCT_COPY_FILES += \
     $(SONY_ROOT)/twrp.fstab:recovery/root/etc/twrp.fstab
 
-# SELinux
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.selinux=1
-
-# Bootimg tools
-PRODUCT_PACKAGES += \
-    extract_elf_ramdisk
-
-# Recovery keycheck
-PRODUCT_PACKAGES += \
-    keycheck
-
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnGSMDevice=1
