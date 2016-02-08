@@ -14,3 +14,6 @@
 
 # Common
 include device/sony/shinano-common/PlatformConfig.mk
+
+# Don't use DSPManager
+TARGET_NO_DSPMANAGER := true
