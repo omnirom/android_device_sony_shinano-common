@@ -19,6 +19,8 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := krait
 
+ENABLE_CPUSETS := true
+
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 2048
 BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
@@ -67,6 +69,10 @@ BOARD_BLUEDROID_VENDOR_CONF := device/sony/shinano-common/bluetooth/vnd_generic.
 
 # NFC
 NFC_NXP_CHIP_TYPE := PN547C2
+
+# FM definitions for Broadcom solution
+BOARD_HAVE_ALTERNATE_FM := true
+BOARD_HAVE_BCM_FM := true
 
 # Props for hotplugging
 TARGET_SYSTEM_PROP += device/sony/shinano-common/system.prop
