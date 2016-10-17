@@ -4,5 +4,11 @@
     "repository":   "android_device_sony_common",
     "target_path":  "device/sony/common",
     "revision":     "android-7.0"
+  },
+  {
+    "remote":       "omnirom",
+    "repository":   "android_prebuilts_gcc_linux-x86_arm_arm-eabi-4.8",
+    "target_path":  "prebuilts/gcc/linux-x86/arm/arm-eabi-4.8",
+    "revision":     "android-7.0"
   }
 ]
