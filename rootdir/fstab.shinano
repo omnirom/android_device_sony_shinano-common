@@ -9,6 +9,7 @@
 /dev/block/bootdevice/by-name/userdata     /data        f2fs    noatime,nosuid,nodev,discard,nodiratime,inline_xattr,flush_merge  wait,nonremovable,formattable,encryptable=footer
 /dev/block/bootdevice/by-name/boot         /boot        emmc    defaults                                                      defaults
 /dev/block/bootdevice/by-name/FOTAKernel   /recovery    emmc    defaults                                                      defaults
+/dev/block/bootdevice/by-name/apps_log     /misc        emmc    defaults                                                      defaults
 
 /devices/msm_sdcc.*/mmc_host/mmc2*         auto         auto    defaults                                                      voldmanaged=sdcard1:auto,encryptable=userdata
 /devices/*/xhci-hcd.0.auto/usb*            auto         auto    defaults                                                      voldmanaged=usb:auto
