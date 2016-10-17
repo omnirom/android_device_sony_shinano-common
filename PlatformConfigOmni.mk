@@ -15,6 +15,14 @@
 # Common
 include device/sony/shinano-common/PlatformConfig.mk
 
+# F2FS
+TARGET_USERIMAGES_USE_F2FS := true
+PRODUCT_PACKAGES += \
+    mkfs.f2fs \
+    fsck.f2fs \
+    fibmap.f2fs \
+    f2fstat
+
 # Bootdevice 
 BOARD_KERNEL_CMDLINE += androidboot.bootdevice=msm_sdcc.1
 

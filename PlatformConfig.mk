@@ -41,13 +41,6 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2671771648
 BOARD_BOOTIMAGE_PARTITION_SIZE := 20971520
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 
-TARGET_USERIMAGES_USE_F2FS := true
-PRODUCT_PACKAGES += \
-    mkfs.f2fs \
-    fsck.f2fs \
-    fibmap.f2fs \
-    f2fstat
-
 TARGET_RECOVERY_FSTAB = device/sony/shinano-common/rootdir/fstab.shinano
 
 # Wi-Fi definitions for Broadcom solution
