@@ -72,7 +72,9 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUEDROID_VENDOR_CONF := device/sony/shinano-common/bluetooth/vnd_generic.txt
 
 # NFC
-NFC_NXP_CHIP_TYPE := PN547C2
+NXP_CHIP_TYPE := PN547C2
+PN547C2 := 1
+BOARD_NFC_HAL_SUFFIX := pn54x.default
 
 # FM definitions for Broadcom solution
 BOARD_HAVE_ALTERNATE_FM := true
