@@ -47,3 +47,6 @@ ro.qti.sensors.wu=false
 
 # BT rfkill
 ro.rfkilldisabled=1
+
+# BT AptX
+persist.bt.enableAptXHD=true
