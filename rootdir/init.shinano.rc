@@ -58,9 +58,6 @@ on boot
     chmod 0660 /proc/bluetooth/sleep/lpm
     chmod 0660 /proc/bluetooth/sleep/btwrite
 
-    # Symlink for compability
-    symlink /dev/pn54x /dev/pn547
-
     # add a cpuset for the camera daemon
     mkdir /dev/cpuset/camera-daemon
     write /dev/cpuset/camera-daemon/cpus 0
@@ -127,6 +124,7 @@ service uim /system/bin/brcm-uim-sysfs
     class late_start
     user root
     group bluetooth net_bt_admin net_bt
+    seclabel u:r:uim:s0
     writepid /dev/cpuset/system-background/tasks
 
 on property:vold.post_fs_data_done=1

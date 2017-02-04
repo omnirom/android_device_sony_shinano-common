@@ -12,12 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Platform path
+PLATFORM_COMMON_PATH := device/sony/shinano-common
+
 $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 $(call inherit-product, device/sony/common/common_omni.mk)
 
 SOMC_PLATFORM := shinano
 
-SONY_ROOT := device/sony/shinano-common/rootdir
+SONY_ROOT := $(PLATFORM_COMMON_PATH)/rootdir
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -43,7 +46,7 @@ PRODUCT_COPY_FILES += \
 # Device Specific Hardware
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.barometer.xml:system/etc/permissions/android.hardware.sensor.barometer.xml \
-    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml
+    frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml
 
 # Platform Init
 PRODUCT_PACKAGES += \
@@ -85,6 +88,11 @@ PRODUCT_PACKAGES += \
     FMRadio \
     brcm-uim-sysfs \
     libfmjni
+
+# Camera HAL1 hack on 7.x
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.stagefright.legacyencoder=true \
+    media.stagefright.less-secure=true
 
 # RILD
 PRODUCT_PROPERTY_OVERRIDES += \
