@@ -12,10 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+SONY_ROOT = device/sony/shinano-common/rootdir
+
 # Common config
 include device/sony/shinano-common/platform.mk
 
 # Copying files
 PRODUCT_COPY_FILES += \
-    device/sony/shinano-common/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
-
+    $(SONY_ROOT)/twrp.fstab:recovery/root/etc/twrp.fstab

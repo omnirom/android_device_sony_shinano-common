@@ -24,9 +24,6 @@ on fs
     swapon_all ./fstab.shinano
     write /sys/kernel/boot_adsp/boot 1
 
-    # Start hvdcp to enable quick charge 2.0 in power off charge
-    start hvdcp
-
 on boot
     # Bluetooth
     chown system system /sys/devices/platform/bcmdhd_wlan/macaddr
@@ -58,9 +55,6 @@ on boot
     chmod 0660 /proc/bluetooth/sleep/lpm
     chmod 0660 /proc/bluetooth/sleep/btwrite
 
-    # Symlink for compability
-    symlink /dev/pn54x /dev/pn547
-
     # add a cpuset for the camera daemon
     mkdir /dev/cpuset/camera-daemon
     write /dev/cpuset/camera-daemon/cpus 0
@@ -70,10 +64,12 @@ on boot
     chmod 0664 /dev/cpuset/camera-daemon/tasks
 
     # update foreground cpuset now that processors are up
-    write /dev/cpuset/foreground/cpus 0-3
+    # reserve CPU 3 for the top app
+    write /dev/cpuset/foreground/cpus 0-2
     write /dev/cpuset/foreground/boost/cpus 0-3
     write /dev/cpuset/background/cpus 0
     write /dev/cpuset/system-background/cpus 0-1
+    write /dev/cpuset/top-app/cpus 0-3
 
 # TFA AMP
 service tfa9890_amp /system/bin/tfa9890_amp
@@ -134,8 +130,3 @@ on property:vold.post_fs_data_done=1
 
 on property:bluetooth.isEnabled=true
     write /sys/class/bluetooth/hci0/idle_timeout 7000
-
-service hvdcp /system/bin/hvdcp
-    class core
-    user root
-    disabled
