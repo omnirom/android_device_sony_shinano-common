@@ -105,7 +105,7 @@ service taimport /system/bin/taimport
     oneshot
 
 service iddd /system/bin/iddd
-    class main
+    class core
     user idd
     group idd log inet
 
@@ -169,7 +169,7 @@ service qcamerasvr /system/bin/mm-qcamera-daemon
 # Last 2 args: start block(blk size 128k), number of blocks(partitionsize(kb)/128(kb))
 service tad_static /sbin/tad_static /dev/block/bootdevice/by-name/TA 0,16
 #service tad_static /sbin/tad_static /data/credmgr/ta_part.bin 0,16
-    class trimarea
+    class core
     user tad
     group tad trimarea root
     socket tad stream 0770 system trimarea
