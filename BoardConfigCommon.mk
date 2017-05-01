@@ -28,6 +28,8 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := krait
 
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
+
 # Kernel information
 BOARD_KERNEL_BASE     := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -35,8 +37,6 @@ BOARD_KERNEL_CMDLINE  := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=
 BOARD_KERNEL_CMDLINE  += androidboot.selinux=permissive
 #BOARD_KERNEL_CMDLINE  += androidboot.selinux=disabled
 BOARD_MKBOOTIMG_ARGS  := --ramdisk_offset 0x02000000 --tags_offset 0x01E00000
-BOARD_KERNEL_SEPARATED_DT := true
-TARGET_DTB_EXTRA_FLAGS := --force-v2
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
