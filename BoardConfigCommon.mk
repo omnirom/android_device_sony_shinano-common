@@ -96,3 +96,6 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2671771648
 # Recovery
 TARGET_RECOVERY_FSTAB := device/sony/shinano-common/rootdir/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
+
+# Inherit common parts
+include device/sony/common/CommonConfigOmni.mk

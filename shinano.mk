@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # inherit from msm8974-common
-$(call inherit-product, device/sony/msm8974-common/msm8974.mk)
+$(call inherit-product, device/sony/common/common.mk)
 
 COMMON_PATH := device/sony/shinano-common
 
@@ -216,7 +216,5 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bc
 #$(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
 # Include non-opensource parts
-$(call inherit-product, vendor/sony/shinano-common/shinano-common-vendor.mk)
+$(call inherit-product, vendor/sony/shinano-common-caf/shinano-common-vendor.mk)
 
-# Include non-opensource parts
-$(call inherit-product, vendor/rcstar6696/rcstar6696_main.mk)

@@ -1,0 +1,14 @@
+[
+  {
+    "remote":       "omnirom",
+    "repository":   "android_device_sony_common",
+    "target_path":  "device/sony/common",
+    "revision":     "android-7.1"
+  },
+  {
+    "remote":       "omnirom",
+    "repository":   "android_hardware_broadcom_fm",
+    "target_path":  "hardware/broadcom/fm",
+    "revision":     "android-7.1"
+  }
+]
