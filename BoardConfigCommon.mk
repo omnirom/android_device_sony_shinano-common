@@ -21,6 +21,13 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/shinano-common/include
 BOARD_VENDOR_PLATFORM := shinano
 PRODUCT_PLATFORM:= shinano
 
+TARGET_ARCH := arm
+TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_BOARD_PLATFORM := msm8974
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
+TARGET_CPU_VARIANT := krait
+
 # Kernel information
 BOARD_KERNEL_BASE     := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
