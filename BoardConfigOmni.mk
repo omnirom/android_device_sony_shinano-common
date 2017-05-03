@@ -17,6 +17,9 @@ include device/sony/shinano-common/PlatformConfig.mk
 #Inherit TWRP Config
 include device/sony/shinano-common/twrp.mk
 
+# Kernel header path
+PRODUCT_VENDOR_KERNEL_HEADERS := kernel/sony/msm8974/include
+
 # Custom Boot Image
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := device/sony/common/boot/custombootimg.mk
