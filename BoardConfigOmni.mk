@@ -21,3 +21,5 @@ include device/sony/shinano-common/twrp.mk
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := device/sony/common/boot/custombootimg.mk
 
+WITH_DEXPREOPT := false
+
