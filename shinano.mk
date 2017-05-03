@@ -12,8 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from msm8974-common
-$(call inherit-product, device/sony/common/common.mk)
+# MIGRATION: inherit from msm8974-common (switch to common afterwards).
+$(call inherit-product, device/sony/msm8974-common/msm8974.mk)
+#$(call inherit-product, device/sony/common/common.mk)
 
 COMMON_PATH := device/sony/shinano-common
 

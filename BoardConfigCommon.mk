@@ -107,5 +107,6 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2671771648
 TARGET_RECOVERY_FSTAB := device/sony/shinano-common/rootdir/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 
+# MIGRATION: Comment in after switching to omni's sony-common.
 # Inherit common parts
-include device/sony/common/CommonConfigOmni.mk
+#include device/sony/common/CommonConfigOmni.mk
