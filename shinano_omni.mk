@@ -14,13 +14,3 @@
 
 # inherit from shinano.mk
 $(call inherit-product, device/sony/shinano-common/shinano.mk)
-
-# Use CAF HALs
-BOARD_USES_QCOM_HARDWARE := true
-TARGET_QCOM_DISPLAY_VARIANT := caf-msm8974
-TARGET_QCOM_MEDIA_VARIANT := caf-msm8974
-TARGET_QCOM_AUDIO_VARIANT := caf-msm8974
-
-# Use stock camera blobs
-USE_CAMERA_STUB := true
-

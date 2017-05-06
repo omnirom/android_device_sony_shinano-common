@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/shinano-common/PlatformConfig.mk
+include device/sony/shinano-common/BoardCommonConfigOmni.mk
 
 #Inherit TWRP Config
 include device/sony/shinano-common/twrp.mk
@@ -25,4 +25,3 @@ BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := device/sony/common/boot/custombootimg.mk
 
 WITH_DEXPREOPT := false
-
