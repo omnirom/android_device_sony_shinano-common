@@ -1,8 +1,8 @@
 [
   {
     "remote":       "omnirom",
-    "repository":   "android_device_sony_common",
-    "target_path":  "device/sony/common",
+    "repository":   "android_device_sony_msm8974-common",
+    "target_path":  "device/sony/msm8974-common",
     "revision":     "android-7.1"
   },
   {
