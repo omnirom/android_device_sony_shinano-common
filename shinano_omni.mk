@@ -15,5 +15,8 @@
 # inherit from shinano.mk
 $(call inherit-product, device/sony/shinano-common/shinano.mk)
 
+# BT/FM (Broadcom): Adjust the sysfs patch for 3.4 kernel
+BOARD_HAVE_BCM_FM_SYSFS := "/sys/bus/platform/drivers/bcm_ldisc/bcm_ldisc/"
+
 # inherit from msm8974-common
 $(call inherit-product, device/sony/msm8974-common/msm8974_omni.mk)
