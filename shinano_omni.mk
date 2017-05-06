@@ -14,3 +14,6 @@
 
 # inherit from shinano.mk
 $(call inherit-product, device/sony/shinano-common/shinano.mk)
+
+# inherit from msm8974-common
+$(call inherit-product, device/sony/msm8974-common/msm8974_omni.mk)
