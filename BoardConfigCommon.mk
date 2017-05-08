@@ -67,6 +67,9 @@ TARGET_PROVIDES_GPS_LOC_API := true
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_shinano
 
+# Keystore
+TARGET_KEYMASTER_WAIT_FOR_QSEE := true
+
 # SELinux
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
 BOARD_SEPOLICY_DIRS += \
