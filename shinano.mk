@@ -14,6 +14,8 @@
 
 COMMON_PATH := device/sony/shinano-common
 
+SOMC_PLATFORM := shinano
+
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
 # Permissions
