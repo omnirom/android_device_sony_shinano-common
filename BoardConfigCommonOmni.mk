@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/shinano-common/BoardCommonConfigOmni.mk
+include device/sony/shinano-common/BoardConfigCommon.mk
 
 #Inherit TWRP Config
 include device/sony/shinano-common/twrp.mk
