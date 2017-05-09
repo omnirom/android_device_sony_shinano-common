@@ -15,7 +15,7 @@
 include device/sony/shinano-common/BoardConfigCommon.mk
 
 #Inherit TWRP Config
-include device/sony/shinano-common/twrp.mk
+include device/sony/common/twrp.mk
 
 # Kernel header path
 PRODUCT_VENDOR_KERNEL_HEADERS := kernel/sony/msm8974/include
