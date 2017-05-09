@@ -17,8 +17,4 @@ include device/sony/shinano-common/BoardConfigCommon.mk
 #Inherit TWRP Config
 include device/sony/common/twrp.mk
 
-# Custom Boot Image
-BOARD_CUSTOM_BOOTIMG := true
-BOARD_CUSTOM_BOOTIMG_MK := device/sony/common/boot/custombootimg.mk
-
 WITH_DEXPREOPT := false
