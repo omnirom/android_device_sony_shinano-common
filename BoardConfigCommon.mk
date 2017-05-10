@@ -19,7 +19,6 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/shinano-common/include
 
 # Platform
 BOARD_VENDOR_PLATFORM := shinano
-PRODUCT_PLATFORM:= shinano
 
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
