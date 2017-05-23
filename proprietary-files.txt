@@ -312,7 +312,6 @@ lib/libmiscta.so
 lib/libta.so
 
 # Time
-bin/time_daemon
 -vendor/lib/libtime_genoff.so
 
 # Touchscreen
