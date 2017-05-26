@@ -1,3 +1,4 @@
+# iddd daemon
 type iddd, domain;
 
 type iddd_exec, exec_type, file_type;
@@ -11,9 +12,9 @@ allow iddd iddd_file:sock_file { create setattr unlink write };
 allow iddd iddd_file:fifo_file rw_file_perms;
 allow iddd iddd_file:file rw_file_perms;
 allow iddd iddd_file:file { create rename unlink };
+
 allow iddd iddd_file:dir rw_file_perms;
-allow iddd iddd_file:dir { add_name remove_name search };
-allow iddd iddd_file:dir create;
+allow iddd iddd_file:dir { add_name create remove_name search };
 
 # TODO: label the right way / Allow context change
 allow iddd system_file:file execute_no_trans;
@@ -30,3 +31,5 @@ allow iddd tmpfs:dir search;
 # Allow proc socket search
 allow iddd proc:file { getattr open read };
 
+# Allow idd to read ro.semc
+allow iddd ta_prop:file { getattr open read };
