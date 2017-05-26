@@ -94,10 +94,10 @@ on post-fs-data
 
     # SONY: Import MiscTA to System properties
     exec -- /system/bin/taimport property
-    setprop init.taimport.ready true                              
-    # taimport ready, use this as trigger for multi-cdf-symlinker 
+    setprop init.taimport.ready true
+    # taimport ready, use this as trigger for multi-cdf-symlinker
 
- 
+
 service taimport /system/bin/taimport
     class late_start
     user root
@@ -150,6 +150,12 @@ service wvkbd_installer /system/bin/wvkbd
     group system
     oneshot
     disabled
+
+# All services that use qseecomd daemon listeners should
+# start on sys.listeners.registered property to make sure that
+# all of its service listeners are registered before calling them
+on property:sys.listeners.registered=true
+    start wvkbd_installer
 
 # All services that use qseecomd daemon listeners should
 # start on sys.listeners.registered property to make sure that
