@@ -17,3 +17,6 @@ include device/sony/shinano-common/PlatformConfig.mk
 
 # Bootdevice 
 BOARD_KERNEL_CMDLINE += androidboot.bootdevice=msm_sdcc.1
+
+# kernel
+TARGET_KERNEL_SOURCE := kernel/sony/msm
