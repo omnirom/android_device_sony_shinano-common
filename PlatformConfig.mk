@@ -22,6 +22,9 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := krait
 
+# Kernel Version
+TARGET_KERNEL_VERSION := 3.10
+
 ENABLE_CPUSETS := true
 
 BOARD_KERNEL_BASE        := 0x00000000
@@ -70,8 +73,8 @@ NXP_CHIP_TYPE := PN547C2
 BOARD_HAVE_ALTERNATE_FM := true
 BOARD_HAVE_BCM_FM := true
 
-# Props for hotplugging
-TARGET_SYSTEM_PROP += $(PLATFORM_COMMON_PATH)/system.prop
+# Camera
+TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += $(PLATFORM_COMMON_PATH)/sepolicy
