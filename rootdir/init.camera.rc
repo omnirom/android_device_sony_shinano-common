@@ -15,7 +15,13 @@
 #
 
 on init
-	export LD_SHIM_LIBS /system/vendor/lib/libwvm.so|libshims_wvm.so:/system/bin/credmgrd|libshims_signal.so:/system/bin/iddd|libshims_idd.so:/system/bin/suntrold|libshims_signal.so:/system/vendor/lib/libwvm.so|libdtcpipplayer.so
+	export LD_SHIM_LIBS " \
+/system/vendor/lib/libwvm.so|libshims_wvm.so \
+:/system/bin/credmgrd|libshims_signal.so \
+:/system/bin/iddd|libshims_idd.so \
+:/system/bin/suntrold|libshims_signal.so \
+:/system/vendor/lib/libwvm.so|libdtcpipplayer.so \
+"
 
 	mkdir /idd 0751 idd idd
 	mkdir /rca 0750 idd idd
@@ -94,9 +100,12 @@ on post-fs-data
 
     # SONY: Import MiscTA to System properties
     exec -- /system/bin/taimport property
-    setprop init.taimport.ready true                              
-    # taimport ready, use this as trigger for multi-cdf-symlinker 
+    setprop init.taimport.ready true
+    # taimport ready, use this as trigger for multi-cdf-symlinker
 
+    # create credmgrinit log file
+    touch /cache/credmgr.log
+    restorecon -R /cache/credmgr.log
  
 service taimport /system/bin/taimport
     class late_start
@@ -150,6 +159,12 @@ service wvkbd_installer /system/bin/wvkbd
     group system
     oneshot
     disabled
+
+# All services that use qseecomd daemon listeners should
+# start on sys.listeners.registered property to make sure that
+# all of its service listeners are registered before calling them
+on property:sys.listeners.registered=true
+    start wvkbd_installer
 
 # All services that use qseecomd daemon listeners should
 # start on sys.listeners.registered property to make sure that
