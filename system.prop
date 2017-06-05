@@ -25,6 +25,7 @@ audio.offload.pcm.24bit.enable=true
 audio.offload.video=true
 
 # Semc
+ro.semc.version.sw=23.5.A.1.291
 ro.semc.version.sw_revision=23.5.A.1.291
 ro.semc.version.sw_variant=GLOBAL-LTECA
 ro.semc.version.sw_type=user
