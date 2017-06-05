@@ -122,7 +122,7 @@ service iddd /system/bin/iddd
 
 # This script init /cache/CredentialManagerData if /data/credmgr doesn't meet our requirements
 service initcredmgr /system/bin/credmgrfirstboot.sh
-    class late_start
+    class latestart
     user system
     group credmgr_client
     oneshot

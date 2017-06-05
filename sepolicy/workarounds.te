@@ -1,7 +1,2 @@
-
-
 #TODO: shouldnot exist
 allow rmt_storage self:capability dac_override;
-allow zygote self:capability sys_nice; # wrong UID/GID on specific entry
-
-
