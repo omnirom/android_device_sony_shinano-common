@@ -35,3 +35,11 @@ ro.semc.version.cust.active=
 
 # Storage
 ro.sys.sdcardfs=true
+
+# Audio config
+ro.qc.sdk.audio.fluencetype=fluence
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+persist.audio.fluence.audiorec=true
+persist.audio.fluence.speaker=true
+persist.audio.handset.mic.type=analog
