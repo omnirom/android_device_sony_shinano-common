@@ -520,6 +520,11 @@ service qcom-sensor-sh /system/bin/sh /system/etc/init.qcom-sensor.sh
     user root
     oneshot
 
+service time_daemon /system/bin/time_daemon
+    class late_start
+    user root
+    group root radio qcom_diag
+
 service charger /sbin/healthd -c
     class charger
     seclabel u:r:healthd:s0
