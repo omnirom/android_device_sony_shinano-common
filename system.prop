@@ -7,9 +7,6 @@ ro.semc.version.fs_revision=23.5.A.1.291
 ro.semc.version.fs=GENERIC
 ro.semc.version.cust.active=
 
-# Config for CNE on non-Qualcomm Wi-Fi chip
-persist.cne.rat.wlan.chip.oem=nqc
-
 # Audio config
 ro.qc.sdk.audio.fluencetype=fluence
 persist.audio.fluence.voicecall=true
