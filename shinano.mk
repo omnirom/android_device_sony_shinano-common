@@ -159,16 +159,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true
 
-# Voice Call and Audio Recording
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qc.sdk.audio.fluencetype=none \
-    persist.audio.dualmic.config=endfire \
-    persist.audio.fluence.voicecall=true \
-    persist.audio.fluence.voicerec=false \
-    persist.audio.fluence.audiorec=true \
-    persist.audio.fluence.speaker=true \
-    persist.audio.handset.mic.type=analog
-
 # aDSP
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.sensors.qmd=false \
