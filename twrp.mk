@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+TW_DEVICE_VERSION := 1
+
 # TWRP UI
 TW_THEME := portrait_hdpi
 BOARD_HAS_NO_SELECT_BUTTON := true
@@ -21,11 +23,12 @@ TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_TARGET_USES_QCOM_BSP := false
 TW_NEW_ION_HEAP := true
+TW_EXCLUDE_TWRPAPP := true
 
 # TWRP Storage
 RECOVERY_SDCARD_ON_DATA := true
+BOARD_HAS_NO_REAL_SDCARD := true
 TW_INCLUDE_FUSE_EXFAT := true
-TW_FLASH_FROM_STORAGE := true
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_DEFAULT_EXTERNAL_STORAGE := true
@@ -35,10 +38,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 #twrp other flags
 TWHAVE_SELINUX := true
-TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_USE_F2FS := true
 TARGET_NO_SEPARATE_RECOVERY := true
-TW_HAS_NO_RECOVERY_PARTITION := true
 
 #http://forum.xda-developers.com/idol-3/development/6039-custom-recovery-twrp-2-8-7-0-t3175507/page7
 #fix for timezone when not decrypted? 
