@@ -77,6 +77,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     tfa9890_amp
     
+# Bluetooth
+PRODUCT_PACKAGES += \
+   libbt-vendor   
+   
 # RIL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/netmgr_config.xml:system/etc/data/netmgr_config.xml \
