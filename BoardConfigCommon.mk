@@ -105,6 +105,7 @@ WIFI_DRIVER_FW_PATH_STA     := "/vendor/firmware/fw_bcmdhd.bin"
 # NFC
 NXP_CHIP_TYPE := PN547C2
 NXP_CHIP_TYPE := 1
+BOARD_NFC_HAL_SUFFIX := qcom
 
 # Filesystem
 BOARD_FLASH_BLOCK_SIZE := 131072
