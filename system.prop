@@ -44,3 +44,6 @@ ro.qti.sensors.tilt=false
 ro.qti.sensors.tilt_detector=true
 ro.qti.sensors.dpc=false
 ro.qti.sensors.wu=false
+
+# BT rfkill
+ro.rfkilldisabled=1
