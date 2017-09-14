@@ -137,6 +137,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml
 
+# TWRP
+TARGET_RECOVERY_DEVICE_MODULES += twrp.fstab
+
 # Off mode charger
 PRODUCT_PACKAGES += \
     charger_res_images
