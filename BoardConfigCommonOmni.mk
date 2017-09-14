@@ -14,7 +14,4 @@
 
 include device/sony/shinano-common/BoardConfigCommon.mk
 
-#Inherit TWRP Config
-include device/sony/common/twrp.mk
-
 WITH_DEXPREOPT := false
