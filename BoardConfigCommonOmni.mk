@@ -14,4 +14,8 @@
 
 include device/sony/shinano-common/BoardConfigCommon.mk
 
+#Inherit TWRP Config
+include device/sony/shinano-common/twrp.mk
+TARGET_RECOVERY_DEVICE_DIRS += device/sony/shinano-common
+
 WITH_DEXPREOPT := false
