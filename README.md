@@ -1,5 +1,6 @@
 Copyright 2013 - The CyanogenMod Project
 Copyright 2017 - The LineageOS Project
+Copyright 2017 - The OmniRom Project
 ================================
 
 This is the Android device configuration for shinano platform.
@@ -20,11 +21,11 @@ Shinano devices:
 Depend on (Sony specific):
 --------------------------
 
-    LineageOS/android_device_sony_msm8974-common
-    LineageOS/android_device_sony_common
+    omnirom/android_device_sony_msm8974-common
+    omnirom/android_device_sony_common
 
-| version | kernel version                        |
-|---------|---------------------------------------|
-| 14.1    | LineageOS/android_kernel_sony_msm8974 |
-| 13      | LineageOS/android_kernel_sony_msm     |
-| 12.1    | LineageOS/android_kernel_sony_msm8974 |
+| Version | Kernel version | Kernel repository                     |
+|---------|----------------|---------------------------------------|
+| 8.0     | 3.4            | LineageOS/android_kernel_sony_msm8974 |
+| 7.1     | 3.4            | LineageOS/android_kernel_sony_msm8974 |
+| 6.x     | 3.10           | LineageOS/android_kernel_sony_msm     |
