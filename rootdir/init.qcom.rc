@@ -557,7 +557,7 @@ service mpdecision /system/bin/mpdecision --avg_comp
     seclabel u:r:uim:s0
 
 # OSS time
-service timekeep /system/bin/timekeep restore
+service timekeep /system/vendor/bin/timekeep restore
     class late_start
     user root
     group root
