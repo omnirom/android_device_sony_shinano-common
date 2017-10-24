@@ -4,5 +4,11 @@
     "repository":   "android_device_sony_msm8974-common",
     "target_path":  "device/sony/msm8974-common",
     "revision":     "android-8.0"
+  },
+  {
+    "remote":       "choose",
+    "repository":   "android_vendor_broadcom_bt-fm",
+    "target_path":  "vendor/broadcom/bt-fm",
+    "revision":     "android-8.0"
   }
 ]
