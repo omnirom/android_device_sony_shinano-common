@@ -16,6 +16,11 @@ COMMON_PATH := device/sony/shinano-common
 
 SOMC_PLATFORM := shinano
 
+ifneq (${ROM_KEYS_PATH},)
+    PRODUCT_DEFAULT_DEV_CERTIFICATE := ${ROM_KEYS_PATH}/releasekey
+    PRODUCT_EXTRA_RECOVERY_KEYS := $(PRODUCT_DEFAULT_DEV_CERTIFICATE)
+endif
+
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
 # Permissions
