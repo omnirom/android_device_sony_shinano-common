@@ -70,7 +70,11 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     tfa9890_amp
-    
+
+# SMS app
+PRODUCT_PACKAGES += \
+    messaging
+
 # Bluetooth
 PRODUCT_PACKAGES += \
    libbt-vendor   
