@@ -1,0 +1,3 @@
+# qdsp socket
+allow toolbox qdsp_device:chr_file rw_file_perms;
+allowxperm toolbox qdsp_device:chr_file ioctl adsprpcd_ioctls;
