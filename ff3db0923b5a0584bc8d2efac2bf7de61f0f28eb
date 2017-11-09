@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4dfdda97_a8eb4b8e",
+        "filename": "sepolicy/mlog_qmi.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1001711
+      },
+      "writtenOn": "2017-11-09T15:03:40Z",
+      "side": 1,
+      "message": "probably need to be replaced with\ncreate_socket_perms_no_ioctl",
+      "revId": "ff3db0923b5a0584bc8d2efac2bf7de61f0f28eb",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
