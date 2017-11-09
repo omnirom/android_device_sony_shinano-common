@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "46b7648e_f41d06f4",
+        "filename": "sepolicy/init.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1001711
+      },
+      "writtenOn": "2017-11-09T12:12:11Z",
+      "side": 1,
+      "message": "Why the service is labeled as \u0027init\u0027?",
+      "revId": "4921ae8c3634b804d9b3079d91aaf1e951bddb9b",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
