@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "821326cb_0e512556",
+        "filename": "rootdir/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 301,
+      "author": {
+        "id": 1001711
+      },
+      "writtenOn": "2017-11-19T16:11:56Z",
+      "side": 1,
+      "message": "Could it be better to recursive chown? \n    chown system system /sys/class/leds -R ? \nMaybe it is not possible into init.",
+      "revId": "cf1ea2d2e1fe35c54f7752f0283e0a57e4b703ea",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
