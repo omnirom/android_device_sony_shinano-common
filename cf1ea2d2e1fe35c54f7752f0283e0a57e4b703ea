@@ -16,6 +16,24 @@
       "revId": "cf1ea2d2e1fe35c54f7752f0283e0a57e4b703ea",
       "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "db53c493_103b0e45",
+        "filename": "rootdir/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 301,
+      "author": {
+        "id": 1001607
+      },
+      "writtenOn": "2017-11-19T19:00:44Z",
+      "side": 1,
+      "message": "There are many more files in that directory than the ones listed here. It is not intended that all these nodes are readable by the system",
+      "parentUuid": "821326cb_0e512556",
+      "revId": "cf1ea2d2e1fe35c54f7752f0283e0a57e4b703ea",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
     }
   ]
 }
