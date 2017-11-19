@@ -53,8 +53,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera (stock .575 blobs)
 PRODUCT_PACKAGES += \
-	tad_static \
-	wait4tad_static 
+    tad_static \
+    wait4tad_static 
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/system/bin/credmgrfirstboot.sh:system/bin/credmgrfirstboot.sh
@@ -71,11 +71,11 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     tfa9890_amp
-    
+
 # Bluetooth
 PRODUCT_PACKAGES += \
-   libbt-vendor   
-   
+    libbt-vendor
+
 # RIL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/netmgr_config.xml:system/etc/data/netmgr_config.xml \
