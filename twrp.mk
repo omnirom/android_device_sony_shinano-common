@@ -39,6 +39,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 #twrp other flags
 TWHAVE_SELINUX := true
 TARGET_NO_SEPARATE_RECOVERY := true
+TW_USE_TOOLBOX := true
 
 #http://forum.xda-developers.com/idol-3/development/6039-custom-recovery-twrp-2-8-7-0-t3175507/page7
 #fix for timezone when not decrypted? 
