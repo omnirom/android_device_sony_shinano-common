@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cbe320ec_afe52d7f",
+        "filename": "rootdir/init.camera.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1001711
+      },
+      "writtenOn": "2017-12-03T13:37:23Z",
+      "side": 1,
+      "message": "Dup here. Dunno if it is needed.",
+      "revId": "71e825867c04ce206da4ee96319c5bf18cbc2522",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
