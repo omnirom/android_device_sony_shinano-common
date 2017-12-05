@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TW_DEVICE_VERSION := 3
+TW_DEVICE_VERSION := 1
 
 # TWRP UI
 TW_THEME := portrait_hdpi
