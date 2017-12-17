@@ -488,6 +488,7 @@ service suntrold /system/vendor/bin/suntrold
     group system camera
     oneshot
     class main
+    setenv LD_PRELOAD libshims_signal.so
 
 # Modem Log QMI service
 service mlog_qmi_service /system/vendor/bin/mlog_qmi_service

@@ -22,3 +22,4 @@ service iddd /system/vendor/bin/iddd
     class main
     user system
     group system log inet cameraserver media
+    setenv LD_PRELOAD libshims_idd.so
