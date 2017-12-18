@@ -75,13 +75,6 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     libantradio
 
-# Audio
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml
-
-PRODUCT_PACKAGES += \
-    tfa9890_amp
-
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor
