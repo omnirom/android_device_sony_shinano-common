@@ -8,12 +8,12 @@ ro.semc.version.fs=GENERIC
 ro.semc.version.cust.active=
 
 # Audio config
-ro.qc.sdk.audio.fluencetype=fluence
+ro.qc.sdk.audio.ssr=false
+ro.qc.sdk.audio.fluencetype=none
 persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
-persist.audio.fluence.audiorec=true
-persist.audio.fluence.speaker=true
-persist.audio.handset.mic.type=analog
+persist.audio.fluence.speaker=true 
+use.voice.path.for.pcm.voip=true
 # aDSP sensors
 ## max rate
 ro.qti.sensors.max_accel_rate=false
