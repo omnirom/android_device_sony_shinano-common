@@ -23,3 +23,8 @@
 
 # WIFI
 /sys/module/bcmdhd/parameters/firmware_path             u:object_r:sysfs_wlan_fwpath:s0
+
+# Sensors
+/system/vendor/bin/init.qcom-sensor.sh                  u:object_r:sensors_exec:s0
+
+# Useless comment to prevent some build fail because of bad parsing new line
