@@ -148,10 +148,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/system/vendor/bin/init.qcom-sensor.sh:system/vendor/bin/init.qcom-sensor.sh
 
-# Product inherits
-    $(call inherit-product, device/sony/shinano-common/phone-xxhdpi-3072-dalvik-heap.mk)
-    $(call inherit-product, device/sony/shinano-common/phone-xxhdpi-3072-dalvik-hwui-memory.mk)
-
 # BCM Wifi
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 
