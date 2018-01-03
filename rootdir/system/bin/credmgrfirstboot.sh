@@ -1,4 +1,4 @@
-#!/system/vendor/bin/sh
+#!/system/bin/sh
 CREDFOLDER=/data/credmgr
 LOG=/cache/credmgr.log
 
