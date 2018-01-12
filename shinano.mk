@@ -153,4 +153,5 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bc
 
 # Include non-opensource parts
 $(call inherit-product, vendor/sony/shinano-common-caf/shinano-common-vendor.mk)
+$(call inherit-product, vendor/sony/widevine/widevine.mk)
 
