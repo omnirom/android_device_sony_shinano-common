@@ -50,3 +50,6 @@ ro.rfkilldisabled=1
 
 # BT AptX
 persist.bt.enableAptXHD=true
+
+# Disable discard
+ro.lockscreen.secdiscard=false
