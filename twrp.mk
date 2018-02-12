@@ -50,3 +50,6 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_INCLUDE_CRYPTO := true
 #custom flag for shinano-devices
 TARGET_HW_KEYSTORE := true
+TW_CRYPTO_USE_SYSTEM_VOLD := true
+TW_CRYPTO_SYSTEM_VOLD_DEBUG := true
+
