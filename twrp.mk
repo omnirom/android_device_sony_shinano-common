@@ -51,6 +51,7 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 
 # TWRP Crypto
 TW_INCLUDE_CRYPTO := true
+TW_CRYPTO_USE_KEYMASTER_V1 := false
 #custom flag for shinano-devices
 TARGET_HW_KEYSTORE := true
 LZMA_RAMDISK_TARGETS := recovery
