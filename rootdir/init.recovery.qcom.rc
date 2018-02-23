@@ -72,4 +72,12 @@ on boot
 	write /dev/cpuctl/cpu.notify_on_migrate 1
 
 
-service qseecomd /sbin/qseecomd
+service qseecomd /bin/qseecomd
+
+
+service keystore_auth /sbin/keystore_auth
+    disabled
+    oneshot
+    user system
+    group root
+    seclabel u:r:recovery:s0
