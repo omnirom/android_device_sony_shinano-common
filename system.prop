@@ -14,6 +14,8 @@ persist.audio.fluence.voicerec=false
 persist.audio.fluence.audiorec=true
 persist.audio.fluence.speaker=true
 persist.audio.handset.mic.type=analog
+persist.audio.anc.enabled=true
+
 # aDSP sensors
 ## max rate
 ro.qti.sensors.max_accel_rate=false
