@@ -16,6 +16,11 @@ COMMON_PATH := device/sony/shinano-common
 
 SOMC_PLATFORM := shinano
 
+# Include HW subsystem-specific makefiles
+-include $(LOCAL_PATH)/hardware/*/packages.mk
+-include $(LOCAL_PATH)/hardware/*/copy.mk
+-include $(LOCAL_PATH)/hardware/*/prop.mk
+
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
 # Permissions

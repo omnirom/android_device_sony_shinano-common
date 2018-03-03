@@ -17,7 +17,9 @@ include device/sony/msm8974-common/BoardConfigCommonOmni.mk
 
 TARGET_SPECIFIC_HEADER_PATH += device/sony/shinano-common/include
 
-# Platform
+BOARD_PATH := device/sony/shinano-common
+
+# Board
 BOARD_VENDOR_PLATFORM := shinano
 
 TARGET_ARCH := arm
@@ -38,6 +40,9 @@ BOARD_MKBOOTIMG_ARGS  := --ramdisk_offset 0x02000000 --tags_offset 0x01E00000
 
 KERNEL_TOOLCHAIN        := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+
+# Defines for HW subsystems
+-include $(BOARD_PATH)/hardware/*/BoardConfig.mk
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
