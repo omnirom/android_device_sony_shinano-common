@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3efc3d24_014e1b28",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1001607
+      },
+      "writtenOn": "2018-03-06T18:55:03Z",
+      "side": 1,
+      "message": "This flag is already defined in msm8974-common",
+      "revId": "1dd83f8e1e0e199040db71b482032bbcfeed0d4e",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
