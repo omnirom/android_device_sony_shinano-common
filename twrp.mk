@@ -14,6 +14,9 @@
 
 TW_DEVICE_VERSION := 1
 
+# Do not build recovery.img from boot.img
+BOARD_USES_FULL_RECOVERY_IMAGE := true
+
 # TWRP UI
 TW_THEME := portrait_hdpi
 BOARD_HAS_NO_SELECT_BUTTON := true
