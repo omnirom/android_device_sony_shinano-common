@@ -48,10 +48,14 @@ TW_USE_TOOLBOX := true
 #fix for timezone when not decrypted? 
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 
-
 # TWRP Crypto
 TW_INCLUDE_CRYPTO := true
 TW_CRYPTO_USE_KEYMASTER_V1 := false
+TW_CRYPTO_USE_SYSTEM_VOLD := \
+    qseecomd \
+    keymaster-3-0 \
+    hwservicemanager
+TW_INCLUDE_CRYPTO_FBE := true
 #custom flag for shinano-devices
 TARGET_HW_KEYSTORE := true
 LZMA_RAMDISK_TARGETS := recovery
