@@ -9,7 +9,6 @@ LOCAL_MODULE_PATH       := $(TARGET_RECOVERY_ROOT_OUT)/etc
 #cp of bootrec-device is a workaround of failed build due to custombootimg.mk
 #/system sylinks are created to allow blob acces even if /system isn't mounted
 LOCAL_POST_INSTALL_CMD	+= \
-    cp -u device/sony/${CM_BUILD}/recovery/root/etc/bootrec-device $(TARGET_RECOVERY_ROOT_OUT)/etc ;     \
     mkdir -p $(TARGET_RECOVERY_ROOT_OUT)/system; \
     ln -sfT /vendor $(TARGET_RECOVERY_ROOT_OUT)/system/vendor; \
     ln -sfT /etc $(TARGET_RECOVERY_ROOT_OUT)/system/etc; \
@@ -26,8 +25,9 @@ LOCAL_ADDITIONAL_DEPENDENCIES += \
 
 #then copy to recovery ramdisk
 LOCAL_POST_INSTALL_CMD += \
-    mkdir -p $(TARGET_RECOVERY_ROOT_OUT)/lib/hw ; \
-    mkdir -p $(TARGET_RECOVERY_ROOT_OUT)/bin ; \
+    echo "Copying files for TWRP encryption as TARGET_HW_KEYSTORE is set !!!!!!" \
+    mkdir -vp $(TARGET_RECOVERY_ROOT_OUT)/lib/hw ; \
+    mkdir -vp $(TARGET_RECOVERY_ROOT_OUT)/bin ; \
     cp -u $(PRODUCT_OUT)/system/bin/keystore $(TARGET_RECOVERY_ROOT_OUT)/bin/keystore; \
     cp -u $(PRODUCT_OUT)/system/lib/libcutils.so $(TARGET_RECOVERY_ROOT_OUT)/lib/libcutils.so; \
     cp -u $(PRODUCT_OUT)/system/lib/libstdc++.so $(TARGET_RECOVERY_ROOT_OUT)/lib/libstdc++.so; \
