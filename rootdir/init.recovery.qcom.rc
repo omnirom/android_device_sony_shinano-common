@@ -71,9 +71,23 @@ on boot
 	write /sys/class/kgsl/kgsl-3d0/devfreq/governor msm-adreno-tz
 	write /dev/cpuctl/cpu.notify_on_migrate 1
 
+on fs
+    # needed to make qseecomd work in recovery
+    chmod 0660 /dev/qseecom
+    chown system drmrpc /dev/qseecom
+    chmod 0664 /dev/ion
+    chown system system /dev/ion
 
-service qseecomd /bin/qseecomd
+# Oreo has qseecomd in /vendor/bin so add the additional
+# service. Only an existing binary will be started, never both.
 
+service qseecomd /vendor/bin/qseecomd
+    user root
+    group root
+    setenv PATH /vendor/bin:/system/bin
+    setenv LD_LIBRARY_PATH /vendor/lib64:/system/lib64:/vendor/lib:/system/lib
+    disabled
+    oneshot
 
 service keystore_auth /sbin/keystore_auth
     disabled

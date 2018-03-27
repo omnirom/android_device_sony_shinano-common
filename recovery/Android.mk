@@ -13,7 +13,11 @@ LOCAL_POST_INSTALL_CMD	+= \
     ln -sfT /vendor $(TARGET_RECOVERY_ROOT_OUT)/system/vendor; \
     ln -sfT /etc $(TARGET_RECOVERY_ROOT_OUT)/system/etc; \
     ln -sfT /lib $(TARGET_RECOVERY_ROOT_OUT)/system/lib; \
-    ln -sfT /bin $(TARGET_RECOVERY_ROOT_OUT)/system/bin; 
+    ln -sfT /bin $(TARGET_RECOVERY_ROOT_OUT)/system/bin; \
+    cp -v $(TARGET_RECOVERY_ROOT_OUT)/init.real $(TARGET_RECOVERY_ROOT_OUT)/init; 
+
+LOCAL_ADDITIONAL_DEPENDENCIES += \
+    twrpdec
 
 # if hw keystore, build keystore support and create /system symlinks
 ifeq ($(TARGET_HW_KEYSTORE), true)
@@ -35,7 +39,6 @@ LOCAL_POST_INSTALL_CMD += \
     cp -u $(PRODUCT_OUT)/system/lib/hw/keystore.msm8974.so $(TARGET_RECOVERY_ROOT_OUT)/lib/hw/keystore.msm8974.so; \
     cp -u $(PRODUCT_OUT)/system/lib/libcrypto.so $(TARGET_RECOVERY_ROOT_OUT)/lib/libcrypto.so; \
     cp -u $(PRODUCT_OUT)/system/lib/libm.so $(TARGET_RECOVERY_ROOT_OUT)/lib/libm.so; \
-    cp -u $(PRODUCT_OUT)/system/lib/libpcre.so $(TARGET_RECOVERY_ROOT_OUT)/lib/libpcre.so; \
     cp -u $(PRODUCT_OUT)/system/lib/libkeystore_binder.so $(TARGET_RECOVERY_ROOT_OUT)/lib/libkeystore_binder.so; \
     cp -u $(PRODUCT_OUT)/system/lib/libsoftkeymaster.so $(TARGET_RECOVERY_ROOT_OUT)/lib/libsoftkeymaster.so; \
     cp -u $(PRODUCT_OUT)/system/lib/libbinder.so $(TARGET_RECOVERY_ROOT_OUT)/lib/libbinder.so; \
