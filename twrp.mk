@@ -16,6 +16,7 @@ TW_DEVICE_VERSION := 2
 
 # Do not build recovery.img from boot.img
 BOARD_USES_FULL_RECOVERY_IMAGE := true
+RECOVERY_FROM_BOOT_RSYNC_OPTIONS := --exclude=init.real --exclude=init
 
 # TWRP UI
 TW_THEME := portrait_hdpi
