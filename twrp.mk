@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TW_DEVICE_VERSION := 1
+TW_DEVICE_VERSION := 2
 
 # Do not build recovery.img from boot.img
 BOARD_USES_FULL_RECOVERY_IMAGE := true
