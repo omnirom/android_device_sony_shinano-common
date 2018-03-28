@@ -22,6 +22,30 @@
       "revId": "38fd583b65a303a79acf0b7dd1a0d6c60409ac97",
       "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a036ce62_0b413ae8",
+        "filename": "twrp.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1001711
+      },
+      "writtenOn": "2018-03-28T20:28:30Z",
+      "side": 1,
+      "message": "Not sure it will work:\nhttps://github.com/omnirom/android_bootable_recovery/blob/android-8.1/crypto/vold_decrypt/Android.mk#L81\nThe sed seems to be space based only",
+      "parentUuid": "df5a16e2_c129aff7",
+      "range": {
+        "startLine": 54,
+        "startChar": 7,
+        "endLine": 54,
+        "endChar": 8
+      },
+      "revId": "38fd583b65a303a79acf0b7dd1a0d6c60409ac97",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
     }
   ]
 }
