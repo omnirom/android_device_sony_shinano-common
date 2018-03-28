@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "df5a16e2_c129aff7",
+        "filename": "twrp.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1001607
+      },
+      "writtenOn": "2018-03-28T19:48:58Z",
+      "side": 1,
+      "message": "Please use line breaks here. It makes the file more readable.",
+      "range": {
+        "startLine": 54,
+        "startChar": 7,
+        "endLine": 54,
+        "endChar": 8
+      },
+      "revId": "38fd583b65a303a79acf0b7dd1a0d6c60409ac97",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
