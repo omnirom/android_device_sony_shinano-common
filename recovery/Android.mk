@@ -8,7 +8,8 @@ LOCAL_SRC_FILES         := root/etc/twrp.fstab
 LOCAL_MODULE_PATH       := $(TARGET_RECOVERY_ROOT_OUT)/etc
 
 LOCAL_POST_INSTALL_CMD += \
-    cp -uv $(TARGET_ROOT_OUT)/init.real $(TARGET_RECOVERY_ROOT_OUT)/init ;
+    cp -uv $(TARGET_ROOT_OUT)/init.real $(TARGET_RECOVERY_ROOT_OUT)/init ; \
+    cp -uv $(LOCAL_PATH)/root/sbin/unzip $(TARGET_RECOVERY_ROOT_OUT)/sbin/unzip ;
 
 LOCAL_ADDITIONAL_DEPENDENCIES += \
     twrpdec \
