@@ -60,4 +60,7 @@ TW_CRYPTO_USE_SYSTEM_VOLD := \
 TW_INCLUDE_CRYPTO_FBE := true
 #custom flag for shinano-devices
 TARGET_HW_KEYSTORE := true
+
+# Enable LZMA compression for recovery ramdisk
 LZMA_RAMDISK_TARGETS := recovery
+SONY_INIT_USE_LZMA := true
