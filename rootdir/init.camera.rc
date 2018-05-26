@@ -23,6 +23,7 @@ on init
 :/system/lib/libcammw.so|libsensor.so \
 :/system/lib/libsomc_chokoballpal.so|libGraphicBuffer.so \
 :/system/lib/hw/camera.vendor.qcom.so|libsensor.so \
+:/vendor/lib/lib-imsvt.so|libshim_ims.so \
 "
 
 on early-fs
