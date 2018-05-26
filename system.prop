@@ -57,7 +57,8 @@ hw.cabl.level=Auto
 
 #
 # System props for telephony
-telephony.lteOnGSMDevice=1
+# System prop to turn on CdmaLTEPhone always
+telephony.lteOnCdmaDevice=0
 
 #Simulate sdcard on /data/media
 #
