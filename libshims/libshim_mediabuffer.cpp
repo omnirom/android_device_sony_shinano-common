@@ -50,4 +50,8 @@ int _ZNK7android11MediaBuffer8refcountEv(android::MediaBuffer *thisptr) {
     return thisptr->refcount();
 }
 
+int getMetaData() {
+	return 0;
+}
+
 } // extern "C"
