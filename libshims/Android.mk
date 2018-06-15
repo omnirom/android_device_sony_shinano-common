@@ -21,7 +21,8 @@ LOCAL_SRC_FILES := libshim_mediabuffer.cpp
 LOCAL_SHARED_LIBRARIES := \
 	libstagefright_foundation \
 	libui \
-	libgui
+	libgui \
+	libmedia
 
 LOCAL_MODULE := libshims_ims
 LOCAL_MODULE_TAGS := optional
