@@ -11,7 +11,7 @@ LOCAL_POST_INSTALL_CMD += \
     cp -uv $(LOCAL_PATH)/root/sbin/unzip $(TARGET_RECOVERY_ROOT_OUT)/sbin/unzip ; \
     cp -uv $(TARGET_ROOT_OUT)/init.real $(TARGET_RECOVERY_ROOT_OUT)/init ;
 
-LOCAL_ADDITIONAL_DEPENDENCIES += \
+LOCAL_REQUIRED_MODULES += \
     twrpdec \
     $(TARGET_ROOT_OUT)/init \
     $(TARGET_ROOT_OUT)/init.real \
@@ -20,7 +20,7 @@ LOCAL_ADDITIONAL_DEPENDENCIES += \
 # if hw keystore, build keystore support and create /system symlinks
 ifeq ($(TARGET_HW_KEYSTORE), true)
 #we have hw keystore, add to build
-LOCAL_ADDITIONAL_DEPENDENCIES += \
+LOCAL_REQUIRED_MODULES += \
     libvolddecrypt \
     init.recovery.vold_decrypt.rc
 

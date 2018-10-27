@@ -38,8 +38,8 @@ BOARD_KERNEL_BASE     := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS  := --ramdisk_offset 0x02000000 --tags_offset 0x01E00000
 
-KERNEL_TOOLCHAIN        := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin
-KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+#KERNEL_TOOLCHAIN        := ./prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin
+#KERNEL_TOOLCHAIN_PREFIX :=arm-eabi-
 
 # Defines for HW subsystems
 -include $(BOARD_PATH)/hardware/*/BoardConfig.mk
@@ -63,7 +63,7 @@ BOARD_CUSTOM_BT_CONFIG := device/sony/shinano-common/bluetooth/vnd_shinano.txt
 TARGET_PROVIDES_GPS_LOC_API := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_shinano
+# TARGET_INIT_VENDOR_LIB := libinit_shinano
 
 # Keystore
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true

@@ -57,7 +57,8 @@ TW_CRYPTO_USE_SYSTEM_VOLD := \
     qseecomd \
     keymaster-3-0 \
     hwservicemanager
-TW_INCLUDE_CRYPTO_FBE := true
+
 #custom flag for shinano-devices
-TARGET_HW_KEYSTORE := true
 LZMA_RAMDISK_TARGETS := recovery
+TW_INCLUDE_CRYPTO_FBE := false
+TW_NO_LEGACY_PROPS := true
