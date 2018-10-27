@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TW_DEVICE_VERSION := 2
+TW_DEVICE_VERSION := 2000
 
 # Do not build recovery.img from boot.img
 BOARD_USES_FULL_RECOVERY_IMAGE := true
@@ -57,7 +57,8 @@ TW_CRYPTO_USE_SYSTEM_VOLD := \
     qseecomd \
     keymaster-3-0 \
     hwservicemanager
-TW_INCLUDE_CRYPTO_FBE := true
+
 #custom flag for shinano-devices
-TARGET_HW_KEYSTORE := true
 LZMA_RAMDISK_TARGETS := recovery
+TW_INCLUDE_CRYPTO_FBE := false
+TW_NO_LEGACY_PROPS := true
