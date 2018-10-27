@@ -19,7 +19,7 @@ LOCAL_POST_INSTALL_CMD	+= \
 # if hw keystore, build keystore support and create /system symlinks
 ifeq ($(TARGET_HW_KEYSTORE), true)
 #we have hw keystore, add to build
-LOCAL_ADDITIONAL_DEPENDENCIES += \
+LOCAL_REQUIRED_MODULES += \
     keystore \
     keystore.default \
     keystore.$(TARGET_BOARD_PLATFORM)
