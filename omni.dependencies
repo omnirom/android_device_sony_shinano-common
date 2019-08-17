@@ -3,18 +3,18 @@
     "remote":       "omnirom",
     "repository":   "android_device_sony_msm8974-common",
     "target_path":  "device/sony/msm8974-common",
-    "revision":     "android-8.1"
+    "revision":     "android-9.0"
   },
   {
     "remote":       "omnirom",
     "repository":   "android_hardware_broadcom_fm",
     "target_path":  "hardware/broadcom/fm",
-    "revision":     "android-8.1"
+    "revision":     "android-9.0"
   },
   {
     "remote":       "omnirom",
     "repository":   "android_packages_apps_FMRadio",
     "target_path":  "packages/apps/FMRadio",
-    "revision":     "android-8.0"
+    "revision":     "android-9.0"
   }
 ]
